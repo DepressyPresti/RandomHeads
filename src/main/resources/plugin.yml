@@ -1,25 +1,14 @@
-name: RandomHeadPlugin
-main: dev.depressy.randomhead.RandomHeadPlugin
+name: RandomHead
 version: 1.0
+main: dev.depressy.randomhead.RandomHeadPlugin
 api-version: 1.20
-author: Sean
-description: Gives players random HeadDatabase heads every 2 hours, with a GUI claim system.
+description: Gives players a random head every 2 hours of active playtime
+author: depressy
 
 commands:
-  claim:
-    description: Open your head claim GUI
-    usage: /claim
-    permission: randomhead.claim
   rhd:
-    description: Instantly get a random head (OP only)
+    description: Manually give a head (OP only)
     usage: /rhd
-    permission: randomhead.rhd
-
-permissions:
-  randomhead.claim:
-    description: Allows use of /claim
-    default: true
-
-  randomhead.rhd:
-    description: Allows use of /rhd (OP only)
-    default: op
+  cooldown:
+    description: Check your head cooldown
+    usage: /cooldown
